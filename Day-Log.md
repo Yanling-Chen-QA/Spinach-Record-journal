@@ -1,7 +1,8 @@
+# 1st Week
 # Day1 (26-04-20)
 ### todo
 - [x] sso、2FA概念
-- [ ] 带笔、**拓展坞、键盘电池**、圆孔耳机
+- [x] 带笔、**拓展坞、键盘电池**、圆孔耳机
 ### done
 - 拉取各个账户权限，初步了解公司体系
 - standup meeting 听取了几个项目关键词
@@ -11,7 +12,7 @@
 ### todo
 - [x] Workday onboarding 课程学习
 - [x] 15秒英文自我介绍:Hi everyone, my name is YanLing Chen. I’m a student from East China Normal University. I’m very happy to be here as an intern, and I look forward to learning from all of you. Thank you!
-- [ ] 拿员工卡（等待物流中）
+- [x] 拿员工卡（等待物流中）
 - [ ] Wiley各个内部服务及系统：jira、confluence、jsm、workday、outlook、teams、GitHub、内部应用商店（关于内部系统是如何隔开的，微软给了公司配套sso，很有意思想知道怎么设计的）
 - [x] Clarity工单-隶属项目名称（项目名称）
 - [ ] Smit-auto项目架构学习（初步）：
@@ -41,7 +42,7 @@
 # Day4 (26-04-24)
 ### todo
 - [ ] llm-wiki调研
-- [ ] Atlassian的mcp配置以及使用，参考写一下脚本
+- [x] Atlassian的mcp配置以及使用，参考写一下脚本
 - [ ] 需要把公司每一步的it相关内容了解一下，我太好奇了
 
 ### done
@@ -54,3 +55,13 @@
 - 解决ip跳回国内导致的copilot以及其他ai被限制
 - cursor配置atlassian的官方mcp，看了对应文档后简单使用了一下
 - ocr工具了解
+
+
+# 2nd Week
+# Day5 (26-04-27)
+### todo
+- [x] 读llm-wiki应用在wiley知识库的设计文档
+- [x] 写拉取jira中story的脚本
+### done
+- 读了设计文档，如果在理解好业务的情况下，和ai交流会很有效果
+- 用cursor写了脚本，看来要稍微再学习一下python了，不然都看不懂。先配置Atlassian的token，然后有了权限之后，就可以在cursor类工具中配置相关的mcp，然后就可以使用这个工具，我对于它的实现很好奇，我很想知道怎么完成的
