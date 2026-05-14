@@ -153,7 +153,7 @@
 # Day13(26-05-13)
 ### todo
 - [x] 自动更新脚本参数+结构修改
-- [ ] swagger接口SIMT检验是否case全覆盖
+- [x] swagger接口SIMT检验是否case全覆盖
 
 ### done
 - swagger接口统计任务大致思路有
@@ -162,3 +162,12 @@
 2. api case统计覆盖率
    - 相关调研：intellij中的find usage功能比较复杂，主要是构建索引和检索的策略比较复杂
 	- 统计分类思路：只存在于文档/只存在于代码/两者对齐（需文档存在&&代码常量定义&&service实现&&test case中测试有调用）
+
+
+# Day14(26-05-14)
+### todo
+- [ ] 覆盖统计接口草稿精进
+- [ ] [vpn学习](https://xzcoder.com/posts/network/05-simple-vpn.html)
+
+### done
+- 对vpn有了初步了解
