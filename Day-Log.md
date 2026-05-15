@@ -166,8 +166,20 @@
 
 # Day14(26-05-14)
 ### todo
-- [ ] 覆盖统计接口草稿精进
-- [ ] [vpn学习](https://xzcoder.com/posts/network/05-simple-vpn.html)
+- [x] 覆盖统计接口草稿精进
+- [x] [vpn初步学习](https://xzcoder.com/posts/network/05-simple-vpn.html)
 
 ### done
 - 对vpn有了初步了解
+
+
+# Day15(26-05-15)
+### idea
+- 关于爬墙xhs的发布：日常训练合集/动作合集/探馆合集。这就要求把所有视频存在一个地方，然后需要做视频时去拿素材。以及需要每提高效率爬墙，不至于再来一次
+- 关于赚钱：希望我有更多时间思考如何提高自己的薪资。完成财富积累。kk给的大致时间是10-15年，我想压缩成5年。所以多多摄入商业思维，多多实践商业策略，是长期要做的事情。同时英语也是必须要继续学习的。
+
+### todo
+- [x] 覆盖统计接口修改
+- [x] 覆盖统计接口java版review
+### next work
+- [ ] 导出swagger结果到csv中（url，method，deprecated）
