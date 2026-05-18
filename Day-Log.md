@@ -182,4 +182,12 @@
 - [x] 覆盖统计接口修改
 - [x] 覆盖统计接口java版review
 ### next work
-- [ ] 导出swagger结果到csv中（url，method，deprecated）
+- [x] 导出swagger结果到csv中（url，method，deprecated）
+
+# Day16(26-05-18)
+### todo
+- [x] 读harness的实践
+
+# Day17(26-05-20)
+### todo
+- [x] 调整java版本的脚本，并且把excel内容统计出来。这次可能需要多多询问了
