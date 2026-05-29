@@ -215,4 +215,28 @@
 
 # Day20(26-05-25)
 ### todo
-- [ ] 把代码简化一下，只剩swagger api和const的对应
+- [x] 把代码简化一下，只剩swagger api和const的对应
+- [x] 偷学：初识agent
+
+
+# Day21(26-05-27)
+### todo
+- [x] 偷学：agent项目
+- [x] 把进度更新一下，然后要新的任务
+- [x] jira新的对齐任务
+- [x] jira推送knowledge
+
+
+# Day22(26-05-28)
+### todo
+- [x] 偷学：agent项目2
+
+
+# Day23(26-05-29)
+### todo
+- [x] 偷学：agent项目3+4
+- [x] 询问新的任务：服务号如何微信授权登录wiley的官网
+- [ ] 想想怎么偷ai的额度
+
+### INFO
+- agent项目5需要一些别的知识GRPO什么的，先看后面的几个项目，没问题再一边跑一跑一边学学ai基础知识。
