@@ -301,4 +301,10 @@
 
 # Day29(26-06-10)
 ### todo
-- [ ] 1H:提交pr：代码放在base-utils/输入数据放在resource。提交到fy27q1
+- [x] 1H:分析一下already finished怎么统计
+- [x] 1H:提交pr：代码放在base-utils/输入数据放在resource。提交到fy27q1
+- [x] 2H:跑agent2，把代码理解了，写一篇学习笔记
+- [ ] 1H:学习github中的action和workflow
+- [x] 1H:微信授权参考项目，捋一下逻辑
+
+
