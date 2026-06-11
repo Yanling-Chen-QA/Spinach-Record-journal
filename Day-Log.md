@@ -304,7 +304,28 @@
 - [x] 1H:分析一下already finished怎么统计
 - [x] 1H:提交pr：代码放在base-utils/输入数据放在resource。提交到fy27q1
 - [x] 2H:跑agent2，把代码理解了，写一篇学习笔记
-- [ ] 1H:学习github中的action和workflow
+- [x] 1H:学习github中的action和workflow
 - [x] 1H:微信授权参考项目，捋一下逻辑
 
 
+# Day30(26-06-11)
+### todo
+- [ ] 2H:跑一个新的agent项目，理解代码，写学习笔记
+- [x] 3H:把chrome的插件跑通，同时学一下这种插件是怎么做到的
+
+
+### learn
+GitHub Actions = GitHub 提供的自动化平台
+Workflow = 一整套自动化流程（YAML 文件）
+Job = 流程里的一个阶段
+Step = 阶段里的一个步骤
+Action = 可复用的小功能模块
+Runner = 真正执行这些任务的机器/环境
+
+
+
+
+# Day31(26-06-12)
+### todo
+- [ ] 2H:调整一下插件：label、Found in Environment(s)字段加上。
+- [ ] 插件加上浮窗apply
