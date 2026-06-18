@@ -342,7 +342,7 @@ Runner = 真正执行这些任务的机器/环境
   - [x] 1H:调整一下插件：Found in Environment(s)字段加上。
   - [x] 1H:调整一下插件：label字段加上。
   - [x] UI继续调整
-- [ ] 周复盘
+- [x] 周复盘
 - [ ] 读论文+读论文的方法（agent，skill，prompt）
 
 
@@ -352,4 +352,16 @@ Runner = 真正执行这些任务的机器/环境
 - [x] 思考是否要把content分板块管理一下，不然几千行像一坨屎
 - [x] 1H:调整一下插件：模板管理。
 - [x] 1H:模板可多选操作
-- [ ] 2H:插件加上一个button功能，可以选择已有的issue，把对应的子字段copy过来。这里意味着要设置可用的token，让脚本可以自行访问已有的issue。
+
+
+# Day34(26-06-18)
+### todo
+- [x] 2H:把agent实战项目该学习的都学好
+- [x] 1H:尝试用用copilot的agent创建功能，看能不能做出一个论文辅助理解agent
+- [x] 2H:插件加上一个button功能，可以选择已有的issue，把对应的子字段copy过来。这里意味着要设置可用的token，让脚本可以自行访问已有的issue。
+
+# 10th Week
+# Day35(26-06-22)
+### todo
+- [ ] 1H:把agent实战项目该学习的都学好
+- [ ] extension逻辑/ui调整
