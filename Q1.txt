@@ -1,0 +1,152 @@
+Q1
+In this paper, we introduce a novel framework for meet-inthe-middle (MITM) attacks on ARX designs, termed dual-syncopation MITM attack, which formalizes a compact, rule-based language for tracking deterministic and non-deterministic information for two independent propagations through ARX operations. The language provides an uniform abstraction for previous techniques, e.g., initial structure, partial matching, partial-fixing, and naturally supports automation. With the language, we additionally encode new technical insights that is not covered in literature and build an efficient automatic search tool for MITM attacks on ARX designs that can be fully optimized within hours. As a result, we obtain the first preimage attacks on 46- and 47-step SHA-256, extending the previous record of 45 steps by two steps. For SHA-512, we present the first preimage attack on 51 steps, extending the prior record of 50 steps by one step. In addition, we provide a collection of improved preimage attacks on 43-, 44-, and 45-step SHA-256; 46-, 47-, 48-, 49-, and 50-step SHA-512; as well as full-step MD5. The proposed attacks can be converted to free-start collision attacks with the technique proposed by Li, Isobe, and Shibutani at FSE 2012. Our results mark the first improvements on theoretical attacks on SHA-2 in a decade and push the boundary of cryptanalysis of ARX designs.
+
+
+我现在是对密码学完全不了解的人，需要尽量看懂这篇文章。
+现在根据你的建议，我正在读第一轮泛读。读摘要时，有很多概念是不知道的，ARX designs是什么？ preimage attacks on 46- and 47-step SHA-256这句话中的47步又是什么意思？sha2/sha3/md5是什么密码的别称？以及这些密码又是怎么设计的？如果你涉及到画图解释的请不要发送图片，因为无法显示
+
+
+Q2
+请给我一个sha2密码的完整讲解，我需要知道具体的细节。之后再讲讲信息传播（difference propagation）
+hash函数结构：compression function。现在困惑是以下两个都有
+A. “密码学基础完全不懂”
+B. “论文句子看得懂但不知道在干什么”
+
+
+Q3
+攻击少轮的意思是把轮函数找出来吗？还是这一轮常数找出来？还是什么意思？
+
+
+Q4
+我已经按照你的推荐阅读顺序，读完了摘要和第一节。请你详细总结一下这一部分内容，生成一份第一节的讲稿和对应的ppt
+
+
+Q5
+第二节中介绍了SHA-2还有syncopation技术，请你一一详细解释，从总体流程，到每一个符号和计算过程都讲清楚
+
+
+Q6
+请举例子说明syncopation技术，同时请详细解释一下论文中的table1和table2
+
+
+Q7
+我现在正在按照阅读顺序读第三节的内容，刚开始读了一些3.1的内容，发现这一节很多都不懂。请你仔细且不遗漏的教会我，看懂这部分内容
+
+
+Q8
+Let f be an ARX hash function in Davies-Meyer mode f : {0, 1}l×{0, 1}n → {0, 1}n with state length n and message length l. For an n-bit target value h, the preimage problem is to find a message m such that h = f(m, iv)+iv, where iv denotes the initial vector. Writing, v = iv and h′ = h − iv, the challenge of determining a preimage is equivalent to finding a message m that satisfies h′ = f(m, v). A generic exhaustive search tests 2n random messages (for l > n) and thus expects one preimage. We now consider MITM-based preimage search. Assume f factors as f = f2 ◦ f1, so that an attacker can evaluate f1 forward and f−1 2 backward. The attacker chooses two disjoint subsets mf,mb ⊆ m, where mf are the forward free variables, and mb are the backward free variables. The remaining of m is denoted by mp, which are the public bits used by both directions. The goal is ensure that the (partial) forward computation of f1 is independent on mb, the (partial) backward computation of f−1 2 is independent on mf, and that a common (partial) matching between the forward and backward computations exists. Under these conditions one can perform a meet-in-the-middle on the matching state to recover a preimage more efficiently than exhaustive search.
+论文中的这一部分我没看懂，请你详尽解释这段内容，务必让我能够搞懂
+
+
+Q9
+论文下一部分Dual-Syncopation MITM Framework. From the dual-syncopation perspective, we assign to m a dual-syncopation property (P(m), DP(m)), defined as P(m) = (mf ∪mp, mb), DP(m) = (mb ∪mp, mf), (8) where mf and mb swap their roles as syncopated and syncopation bits in the prime and dual properties, respectively. Since v and h′ are public, their dualsyncopation properties are given by P(v) = (v, ∅), DP(v) = (v, ∅), P(h′) = (h′, ∅), DP(h′) = (h′, ∅). (9) In this setting, the forward direction traces the prime syncopation P(m) through f1, while the backward direction traces the dual syncopation DP(m) through f−1 2 . We formally summarize the process as follows:
+我也没看懂，为什么 P(m)中mf ∪mp是确定的信息，mb是不确定信息，不是说不受mb影响吗？这一段请你详尽解释
+
+
+
+Q10
+继续往下逐句讲这段后面的三条 bullet：Forward-syncopation propagation / Backward-syncopation propagation / Matching point。特别是里面涉及到的公式含义
+
+
+Q11
+详细讲Remark 1的内容
+
+
+Q12
+帮我画一个 fm overlap 的完整 MITM 结构图（文字版）同时帮我把 Example 1 里的加法传播和 Remark 1连起来。请把example1中的每一个计算和推导细节都讲解清楚，我还是不太懂
+
+
+Q13
+解释Dual-syncopation MITM preimage attack.的内容，同时逐行讲解 Algorithm 1
+
+
+Q14
+接下来请详细说说dual-syncopation framework 还可以自然整合多种更高级的 MITM 技术，例如：
+splice and cut
+pseudo-preimage 到 preimage 的转换
+initial structure / biclique
+partial matching / partial-fixing
+这些技术我从来没有接触过，同时也有一些看不懂论文中的这部分内容
+
+
+Q15
+讲3.2第一段SHA-256改进
+
+
+Q16
+画旧 MITM 和 dual-syncopation MITM 对比图，同时讲讲 3.2 后面具体的 SHA-256 攻击实例
+
+
+Q17
+请慢一点，3.2章节中涉及到很多公式，我并不清楚是怎么回事。所以请一部分一部分详细讲解清楚。从Revisiting the 43-step attack on SHA-256 in [2].这部分开始
+
+
+Q18
+请解释这一节中Aoki et al. [2] pre-
+sented a preimage attack on 43-step SHA-256 with complexity 2254.9 based on a
+4-step initial structure, expanded by one step forward and two steps backward
+via partial-fixing (see Section 5 of [2] for details)。这句话里面的4-step指的是什么，以及expanded by one step forward and two steps backward
+ via partial-fixing这句话又是什么意思。
+In their
+construction the forward and backward free bits originate from neutral words
+W18 and W21, where a neutral word refers to a message word that influences
+only the forward (resp. backward) computation but not the backward (resp.
+forward) computation.还有这里关于W18、W21是什么意思我也不懂，后续我让你解释某一节，请你不要遗漏信息
+
+
+Q19
+fig1请解释
+
+
+Q20
+上述问题遗漏了很多信息，下面这部分没有解释
+By the dual-syncopation definition, initial
+structures for an intermediate subfunction fIS can be constructed by tracing
+the dual-syncopation property (P(Sin), DP(Sin)) of its input Sin through fIS
+and f−1
+IS in the forward and backward directions, respectively. Below we give a
+concrete 4-step construction of an initial structure IS; a general procedure by
+automatic modeling appears in Section 4.2.
+Aoki et al.’s 4-step initial structure (Section 4.6 of [2]) enforces that the db
+most-significant bits (MSBs) of Ei+2 = 1 and Ei+1 = 0 (for i = 18) so that
+the db backward free bits of W21 do not affect the forward computation. Their
+construction consumes db forward free bits ofW18 to satisfy db MSBs of E20 = 1
+(cf. (10)). By tracing dual-syncopation propagation we show this consumption
+can be reduced by setting an appropriate values of the initial structure’s starting
+state. Before presenting the construction we analyse propagation through Σ1.
+请你重新回答我：Application 1: initial structure.这部分内容请详尽解释，解释每一个出现的符号和公式，并且不要出现latex的乱码问题
+
+
+Q21
+解释如何根据Proposition 1设置p18和p22形成有效的4-step initial structure
+
+
+Q22
+Application 2: partial matching with partial-fixing.这部分内容请详尽解释，解释每一个出现的符号和公式，并且不要出现公式乱码问题。不要遗漏这个标题下的所有信息
+
+
+Q23
+接下来我要进入第四节的阅读，请你说说这一节的内容
+
+
+Q24
+4.1 ARX传播规则逐条解释
+
+
+Q25
+Modular Addition我还是不懂对应的原理和规则，能不能举例子更加详细具体说明
+
+
+Q26
+4.2Automatic Model of Dual-Syncopation MITM 逐条解释
+
+
+Q27
+接着简要且不失重要细节地介绍一下第五、六节的内容
+
+
+Q
+请把论文脉络同时结合上述我的学习历程，转换成可以用于汇报的内容，把握好详细与简略的平衡。先输出一版文字汇报内容，然后我们再讨论是否合理，达成公式之后再生成对应的latex-ppt，以便于我可以通过overleaf转换成直接可用的ppt
+
+把上述内容+论文中的对应的一些公式/表格，生成对应的latex-ppt，以便于我可以通过overleaf转换成直接可用的ppt
+

@@ -361,7 +361,14 @@ Runner = 真正执行这些任务的机器/环境
 - [x] 2H:插件加上一个button功能，可以选择已有的issue，把对应的子字段copy过来。这里意味着要设置可用的token，让脚本可以自行访问已有的issue。
 
 # 10th Week
-# Day35(26-06-22)
+# Day35(26-06-24)
+### todo
+- [x] 1H:把agent实战项目该学习的都学好
+- [x] extension逻辑/ui调整
+- [x] 站点只包含jira
+
+
+# Day36(26-06-25)
 ### todo
 - [ ] 1H:把agent实战项目该学习的都学好
-- [ ] extension逻辑/ui调整
+- [ ] 1H:提交重构内容，并且把记事本中的bug修复
