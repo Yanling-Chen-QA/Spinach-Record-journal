@@ -343,7 +343,7 @@ Runner = 真正执行这些任务的机器/环境
   - [x] 1H:调整一下插件：label字段加上。
   - [x] UI继续调整
 - [x] 周复盘
-- [ ] 读论文+读论文的方法（agent，skill，prompt）
+- [x] 读论文+读论文的方法（agent，skill，prompt）
 
 
 # Day33(26-06-17)
@@ -370,5 +370,19 @@ Runner = 真正执行这些任务的机器/环境
 
 # Day36(26-06-25)
 ### todo
-- [ ] 1H:把agent实战项目该学习的都学好
-- [ ] 1H:提交重构内容，并且把记事本中的bug修复
+- [x] 1H:把agent实战项目2该学习的都学好
+- [x] 1H:提交重构内容，并且把记事本中的bug修复
+- [x] 1H:agent 实战项目3该学习的都学好
+
+
+# 11th Week
+# Day37(26-06-29)
+### todo
+- [x] 2H:把agent实战项目4该学习的都学好
+- [x] 研究如何导出chat对话内容:总结输出成文件
+
+# Day38(26-07-01)
+### todo
+- [x] 2H:把agent实战项目5该学习的都学好
+- [ ] 1H:copilot high conversation解决
+- [ ] 1H:kafka跑起来
