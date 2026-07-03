@@ -383,6 +383,13 @@ Runner = 真正执行这些任务的机器/环境
 
 # Day38(26-07-01)
 ### todo
-- [x] 2H:把agent实战项目5该学习的都学好
-- [ ] 1H:copilot high conversation解决
-- [ ] 1H:kafka跑起来
+- [x] 2H:把agent实战项目6该学习的都学好
+- [x] 2H:把agent实战项目7该学习的都学好
+- [x] 1H:copilot high conversation解决
+- [x] 1H:kafka跑起来
+
+## Day39(26-07-02)  
+### todo
+- [x] 1H:把kafka-topic-total-num-config功能做一下
+- [ ] 好好思考到底学算法还是开发，和ai好好聊一聊
+- [ ] 1H:把agent实战项目7中的拓展完成
