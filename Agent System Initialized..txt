@@ -1,0 +1,1128 @@
+User: 我想为下一份“大模型开发/agent开发”实习求职写简历，这是我的项目之一，一个llm wiki/内部知识库，我需要把这个项目梳理清楚，我应该怎么做
+
+GitHub Copilot: Optimized tool selection你这次的目标是把这个“LLM Wiki/内部知识库”项目整理成可用于“大模型开发/Agent开发”实习简历的高质量项目描述。我先快速读取你当前仓库里的关键信息（README、架构与流程文档），提炼成“简历可写点 + 面试可讲故事线 + 可量化成果”，然后给你一套可直接执行的梳理模板。
+
+我先抓取仓库里最能体现“你做了什么、解决了什么问题、产出了什么结果”的核心文档，目标是把建议建立在你真实项目内容上，而不是泛泛简历话术。
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/README.md)
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/product/architecture.md)
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/scripts/README.md)
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/mkdocs.yml)
+
+我已经拿到技术架构与自动化流程主干，下一步补充“你在这个项目里的方法论和规范执行”证据（例如编写规则、协作流程、追踪机制），这样才能转成更强的简历表述。
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/ai/cursor-rule.md#1-1), lines 1 to 320
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/CONTRIBUTING.md)
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/product/index.md)
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/log.md)
+
+我已经提炼出这个项目最能打的卖点：你不是“写文档”，而是“搭建了可持续演进的知识工程流水线（采集-编译-发布-追踪）”。我先顺手把你的偏好（中文求职场景）记到记忆里，后面你让我继续打磨简历时会直接沿用。
+
+Read memory
+
+Read memory
+
+Created memory file [](file:///c%3A/Users/yanchen/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/memory-tool/memories/preferences.md)
+
+你这个项目非常适合写成“大模型/Agent工程化”方向，不要把它写成“整理文档”，而要写成：
+
+“我搭建了一套可重复运行的企业知识编译系统：从 Jira/Confluence 自动采集，到规则化知识编译，再到 MkDocs 发布和可追溯治理。”
+
+你仓库里已经有很强的证据链：
+脚本自动化说明、编译规则与治理规范、站点发布配置、知识架构页、变更日志、知识目录。
+
+**你应该怎么做（最实用的 5 步）**
+1. 先定项目标题和定位  
+标题建议：LLM Wiki 知识编译与治理平台（内部知识库 Agent）。  
+一句话定位：把非结构化协作内容转成可检索、可追溯、可发布的产品知识。
+
+2. 用“问题-方案-结果”重写项目  
+问题：需求分散在 Jira/Confluence，信息噪声大、版本不一致。  
+方案：脚本采集 + Agent 编译规则 + 覆盖状态治理 + 站点化发布。  
+结果：知识沉淀结构化、更新可追踪、新人 onboarding 成本下降（这里补你的真实数字）。
+
+3. 补齐量化指标（简历含金量关键）  
+至少补 4 类数字：  
+1. 覆盖规模：编译了多少故事/页面、多少 feature 页面。  
+2. 自动化效率：一次导出/编译节省多少人工时间。  
+3. 质量治理：覆盖状态块、日志更新、过期检查命中率。  
+4. 使用效果：页面访问、检索命中率、新人上手时间变化。  
+没有全量数据也行，用区间或阶段统计。
+
+4. 抽出“Agent 能力点”关键词  
+你可直接对齐 JD 写：  
+1. 工作流编排：采集-分类-编译-发布-追踪闭环。  
+2. 规则驱动：分类规则、来源溯源、Coverage Status 约束。  
+3. 知识工程：raw 与 compiled 双层语义分离。  
+4. 可观测性：变更日志、索引更新、staleness 检查。  
+5. 工程化交付：Python 脚本、MkDocs、GitHub Actions。
+
+5. 准备 90 秒面试讲述  
+按这个顺序讲：背景痛点 → 你的系统设计 → 关键技术决策 → 结果数据 → 复盘与可迁移能力。  
+重点强调“我做的是可持续知识系统，而不是一次性文档整理”。
+
+**可直接放简历的项目描述（可改成你的口吻）**
+项目：LLM Wiki / 内部知识库 Agent（个人主导）  
+1. 设计并实现双层知识架构（raw 输入层 + product 编译层），将 Jira/Confluence 原始内容转化为结构化产品知识，保障来源可追溯与语义一致性。  
+2. 构建 Python 自动化采集脚本与标准化输出格式，支持按 phase/epic/stories 批量导出与增量更新，形成稳定的数据入口。  
+3. 制定 Agent 编译规则与质量门禁（分类路由、Coverage Status、索引与日志强制更新），实现知识沉淀流程标准化。  
+4. 基于 MkDocs + GitHub Pages 搭建知识发布链路，沉淀架构、功能、权限、流程等主题页面，提升团队检索效率与协作一致性。  
+5. 通过变更日志与陈旧性检查机制建立知识治理闭环，降低知识过期与重复维护成本。
+
+**你下一步最值得马上做的事**
+1. 把你真实数据补进上面的 4 类指标。  
+2. 我帮你把这段项目经历压缩成“校招/实习一页简历版（3-4 条）+ 面试口述版（90 秒）”。  
+3. 再根据你目标岗位 JD（发我 1-2 个）做关键词对齐，提升过筛率。
+
+User: 我完全知道python脚本抓取内容怎么做的。但是关于1. 制定 Agent 编译规则与质量门禁（分类路由、Coverage Status、索引与日志强制更新），实现知识沉淀流程标准化。
+2. 基于 MkDocs + GitHub Pages 搭建知识发布链路，沉淀架构、功能、权限、流程等主题页面，提升团队检索效率与协作一致性。
+3. 通过变更日志与陈旧性检查机制建立知识治理闭环，降低知识过期与重复维护成本。
+我不清楚具体怎么做到的，比如product不就是md文件吗？怎么就跑起来了
+
+GitHub Copilot: 你这个问题很关键，本质是在问“纯 Markdown 为什么能形成工程化系统”。我先读一下仓库里的 CI/workflow（尤其 staleness-check 和发布相关），然后把“规则层、构建层、治理层”按你项目里的真实实现讲透，并给你一个面试可复述版本。
+
+Searched for files matching `**/.github/workflows/*`, 3 matches
+
+Searched for regex `staleness|mkdocs|gh-deploy|Pages|workflow_dispatch` (`**/.github/workflows/**`), 45 results
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/README.md)
+
+我已经确认仓库里确实有“发布流程”和“陈旧性治理”两个工作流，不是概念层面。接下来我把这三个 workflow 文件读出来，用你项目里的真实步骤解释“md 文件如何变成可运行系统”。
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/.github/workflows/mkdocs-gh-pages.yml)
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/.github/workflows/staleness-check.yml)
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/.github/workflows/export-and-ingest.yml)
+
+我已经拿到完整证据链，结论是：你的理解没错，product 确实只是 md，但“跑起来”靠的是 MkDocs 构建器 + GitHub Actions 工作流 + 规则文档把人和 Agent 约束成流程。下面我再补几处关键行号，给你一版可直接用于面试解释的“工程化闭环”。
+
+Searched for text `docs_dir|nav:|site_url` (`**/mkdocs.yml`), 3 results
+
+Searched for regex `Layer Semantics|Coverage Status Enforcement|Indexing & Logging|Jira Story Auto-Classification` (`**/ai/cursor-rule.md`), 4 results
+
+Searched for text ``Never edit `product/`|How to stage new raw inputs|PR review expectations`` (`**/CONTRIBUTING.md`), 2 results
+
+Searched for regex `append|newest first|required format` (`**/log.md`), 3 results
+
+你问到本质了。  
+是的，product 只是 Markdown 文件；但“系统跑起来”靠的是这三层：
+
+1. 规则层：定义什么能进知识库、怎么进、更新时必须补哪些元数据  
+2. 构建层：把 product 下的 md 编译成可浏览的网站  
+3. 治理层：持续发现过期页面并触发回补
+
+你项目里这三层都有“可执行证据”。
+
+**一、为什么 md 能“跑起来”**
+Markdown 本身是内容，不是应用；真正运行的是静态站点构建器 MkDocs。
+
+关键配置在 mkdocs.yml：docs_dir 指向 product。  
+意思是：把 index.md 和所有 feature 页面当作站点源码。  
+再由 GitHub Actions 执行构建与部署流程，见 mkdocs-gh-pages.yml：
+- 监听 product 变更触发发布
+- 安装依赖
+- 执行 mkdocs build
+- 执行 mkdocs gh-deploy 推到 gh-pages 分支
+
+所以不是“md 自动运行”，而是“md 被构建器编译并发布为静态网站”。
+
+**二、你说的 Agent 编译规则与质量门禁，具体怎么落地**
+这部分落在规则文档，而不是代码文件里。核心在 cursor-rule.md 开始的几块：
+
+- 分层语义：raw 是输入，product 才是权威输出，见 cursor-rule.md
+- Coverage Status 强制块：每页要声明验证状态和日期，见 cursor-rule.md
+- 索引和日志强制更新：改页面要同步 index 与 log，见 cursor-rule.md
+- Jira 分类路由规则：按关键词路由到具体 feature 页面，见 cursor-rule.md
+
+再配合协作规范 CONTRIBUTING.md 的 PR review checklist。  
+这就是“质量门禁”：不是靠人记忆，而是靠规则和评审约束。
+
+**三、知识治理闭环怎么形成**
+闭环是：新增输入 → 编译输出 → 记录变更 → 检查陈旧 → 触发再编译。
+
+1. 变更日志机制  
+log.md 要求最新在顶部、固定格式记录 ingest/gap/backfill，这让每次知识更新都可追溯。
+
+2. 陈旧性检查机制  
+staleness-check.yml 里有脚本按 git 最后提交时间计算页面年龄，超阈值就汇总并开/更 issue。
+
+3. 触发修复  
+issue 会引导重新导出 raw + 让 Agent 重编译，回到第一步，形成循环。
+
+**四、你仓库里一个重要现状**
+目前有两个工作流被显式禁用：
+- 导出流程 export job 有 if: false，见 export-and-ingest.yml
+- staleness-check job 也有 if: false，见 staleness-check.yml
+
+发布流程是启用的（mkdocs-gh-pages）。  
+所以你可以在面试里诚实说：框架设计完备，发布已在线；自动导出和陈旧巡检在仓库里有实现，但当前按项目节奏临时关闭，随时可恢复。
+
+**五、给你一个面试可直接说的版本（30秒）**
+我做的不是写 Markdown，而是做知识工程流水线：  
+原始 Jira/Confluence 内容先进入 raw 层，再由 Agent 按规则编译到 product 层。  
+规则里强制分类路由、Coverage 状态、索引和日志更新；站点用 MkDocs 从 product 直接构建并通过 GitHub Pages 发布。  
+同时我设计了 staleness 检查，按 git 提交时间识别过期页面并自动开 issue，驱动再编译，形成知识治理闭环。
+
+如果你愿意，我下一步可以把这段再压缩成“简历3条子弹点 + 面试追问回答（为什么不用向量库、为什么要双层 raw/product）”。
+
+User: 那我执行的ai是什么
+
+GitHub Copilot: 你这套流程里“执行的 AI”本质上是两层：
+
+1. 你现在对话这个助手（GitHub Copilot Chat），模型是 GPT-5.3-Codex。  
+2. 在项目里负责“编译知识”的 AI，是你通过规则文档约束的 Agent 工作流（也就是按你定义的规则去读 raw、更新 product、补索引和日志的那个执行者）。
+
+所以不是“仓库里有一个一直在后台跑的 AI 服务”，而是“你触发时，Copilot/Agent 按规则执行一轮知识编译任务”。
+
+User: 请你把这个项目从宏观到微观，事无巨细的分析一遍，以便我可以重新实现，可以逻辑打通，可以面试没有问题
+
+GitHub Copilot: 你这个目标我理解为三件事一起完成：1）能完整复刻；2）能把技术逻辑从输入到发布全链路讲通；3）能应对面试深挖。  
+我先把核心实现文件（脚本、规则、工作流、产品总览）再系统读一遍，然后给你一份“重建蓝图 + 面试话术 + 常见追问答案”。
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/scripts)
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/requirements-docs.txt)
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/product/overview.md)
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/product/onboarding.md)
+
+我接下来会直接拆解脚本实现细节（参数、数据流、容错、输出约定），这样你可以按模块重写，不会停留在概念层。目标是给你“可复刻的工程清单”。
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/scripts/export-jira.py#1-1), lines 1 to 420
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/scripts/filter-jira-keys-from-excel.py)
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/scripts/export-confluence.py)
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/scripts/remove-cancelled-stories.py)
+
+我发现 export-jira 代码比较长，刚才只读到中段；我再把后半段读取完整，确保给你的重建方案不会漏掉关键实现细节（尤其 ADF 解析、注释线程、附件映射、输出落盘规则）。
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/scripts/export-jira.py#421-421), lines 421 to 980
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/scripts/export-jira.py#981-981), lines 981 to 1500
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/scripts/export-jira.py#1501-1501), lines 1501 to 1872
+
+我已经把核心脚本实现吃透了。下一步我补充“知识内容层”的组织证据（页面模板、Coverage 分布、ADR 模板），这样我能给你一套从数据采集到知识建模再到协作治理的完整重建手册。
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/product/jira/decisions/TEMPLATE.md)
+
+Searched for text `## Coverage Status` (`**/product/**/*.md`), 27 results
+
+Searched for regex `Source|Sources|jira_key|confluence_url|Related` (`**/product/**/*.md`), 99 results
+
+Read [](file:///c%3A/Users/yanchen/OneDrive%20-%20Wiley/Desktop/CTC-Curate-Knowledge/product/features/special-issue-proposals/sip-workflow-generic.md#1-1), lines 1 to 260
+
+我还会补一组“可量化的项目画像”（页面规模、覆盖块数量、原始输入规模），这样你在面试里不只讲机制，还能讲规模与收益。
+
+Ran terminal command: $root='c:/Users/yanchen/OneDrive - Wiley/Desktop/CTC-Curate-Knowledge';
+$productMd=(Get-ChildItem -Path "$root/product" -Recurse -File -Filter *.md).Count;
+$rawJiraMd=(Get-ChildItem -Path "$root/raw/jira" -Recurse -File -Filter *.md -ErrorAction SilentlyContinue).Count;
+$rawConfMd=(Get-ChildItem -Path "$root/raw/confluence" -Recurse -File -Filter *.md -ErrorAction SilentlyContinue).Count;
+$coverageCount=0; Get-ChildItem -Path "$root/product" -Recurse -File -Filter *.md | ForEach-Object { if(Select-String -Path $_.FullName -Pattern '^## Coverage Status' -Quiet){ $coverageCount++ } };
+$logEntries=(Select-String -Path "$root/log.md" -Pattern '^## \[' | Measure-Object).Count;
+"product_md=$productMd`nraw_jira_md=$rawJiraMd`nraw_confluence_md=$rawConfMd`ncoverage_blocks=$coverageCount`nlog_entries=$logEntries"
+
+Ran terminal command: $root='c:/Users/yanchen/OneDrive - Wiley/Desktop/CTC-Curate-Knowledge'; $productMd=(Get-ChildItem -Path "$root/product" -Recurse -File -Filter *.md).Count; $rawJiraMd=(Get-ChildItem -Path "$root/raw/jira" -Recurse -File -Filter *.md -ErrorAction SilentlyContinue).Count; $rawConfMd=(Get-ChildItem -Path "$root/raw/confluence" -Recurse -File -Filter *.md -ErrorAction SilentlyContinue).Count; $coverageCount=0; Get-ChildItem -Path "$root/product" -Recurse -File -Filter *.md | ForEach-Object { if(Select-String -Path $_.FullName -Pattern '^## Coverage Status' -Quiet){ $coverageCount++ } }; $logEntries=(Select-String -Path "$root/log.md" -Pattern '^## \[' | Measure-Object).Count; Write-Output "product_md=$productMd"; Write-Output "raw_jira_md=$rawJiraMd"; Write-Output "raw_confluence_md=$rawConfMd"; Write-Output "coverage_blocks=$coverageCount"; Write-Output "log_entries=$logEntries"
+
+非常好，这个问题一旦打通，你这个项目在大模型/Agent岗位里会非常能打。  
+你要把它理解成：这不是“写了一堆 md”，而是“把 md 作为知识数据面，用规则+流水线把它变成系统”。
+
+下面我按“宏观 → 中观 → 微观 → 重建 → 面试”完整讲一遍，全部基于你仓库现状。
+
+**0. 先给结论**
+你的项目本质是一个 Knowledge Compiler System（知识编译系统），有 5 个层次：
+
+1. 数据输入层：Jira/Confluence 导出到 raw
+2. 语义编译层：Agent 按规则把 raw 归纳到 product
+3. 文档发布层：MkDocs 把 product 构建成站点并发到 GitHub Pages
+4. 治理审计层：Coverage Status + log + stale 检查形成闭环
+5. 协作流程层：CONTRIBUTING/PR 规则保证多人可持续运转
+
+你可以把它讲成“面向企业知识资产的 AgentOps 工程实践”。
+
+---
+
+**1. 宏观架构（你要先会讲这一层）**
+
+1. 输入不是数据库，而是外部系统导出文件  
+来源：Jira/Confluence，经脚本落到 raw 目录。  
+证据：README.md
+
+2. 核心不是检索，而是编译  
+Agent 不直接回答 raw 内容，而是将 raw 变成结构化、可维护、可追溯的 product 页。  
+证据：cursor-rule.md
+
+3. 发布不是后端服务，而是静态站点流水线  
+MkDocs 读取 product 作为 docs_dir，构建静态站点，再 gh-deploy。  
+证据：mkdocs.yml, mkdocs-gh-pages.yml
+
+4. 治理不是口头规范，而是“规则+日志+巡检”  
+Coverage Status、index/log 强制更新、stale issue 自动化。  
+证据：cursor-rule.md, cursor-rule.md, staleness-check.yml
+
+---
+
+**2. 中观：每个目录在系统里的职责**
+
+1. 权威知识层  
+product  
+这是最终知识库，发布站点只读这里。
+
+2. 原始输入层  
+raw  
+raw/jira、raw/confluence、raw/assets 都是输入，不是权威。
+
+3. 规则层  
+cursor-rule.md  
+定义编译规则、分类路由、覆盖状态、索引日志、来源约束。
+
+4. 协作层  
+CONTRIBUTING.md  
+定义人工流程、PR 要求、ADR流程、gap处理。
+
+5. 自动化层  
+scripts + workflows  
+前者做导出，后者做发布与治理检查。
+
+---
+
+**3. 微观实现：它到底怎么“跑起来”的**
+
+**3.1 数据输入脚本层**
+
+1. Jira 导出器  
+export-jira.py
+
+它做了很多工程化工作，不只是请求 API：
+- 通过环境变量读取 Jira 配置
+- 仅导出 Story，过滤 Epic/Task/Bug/Sub-task
+- 按 phase label 自动路由目录，优先最大 phase 编号
+- 递归解析 parent/epic，生成 epic-key-summary 目录
+- 把 Jira ADF 转 Markdown（标题、列表、表格、代码块、媒体）
+- 自动拆分 Description / Acceptance criteria
+- 拉取评论并按 parentId 还原线程
+- 下载图片附件到 raw/assets/jira，并把媒体节点映射到图片链接
+- 每次导出后更新索引 CSV
+
+2. Confluence 导出器  
+export-confluence.py
+
+- 按 phase label / page title / space 导出
+- 拉 body.storage 并做 lightweight html→md 转换
+- 写 front matter（url、space、parent、labels、version、phase、exported_at）
+- 落盘到 raw/confluence/phase-x
+
+3. Excel 批量驱动 Jira 导出  
+filter-jira-keys-from-excel.py
+
+- 读取 Excel 指定 sheet + ID 列
+- JQL 过滤 issue type（默认 Story）和项目
+- 可跳过已导出的 key
+- 对每个 key 调用 export-jira.py
+
+4. 维护脚本  
+remove-cancelled-stories.py
+- 扫描 status=Cancelled 的 story
+- 支持 dry-run 和删除
+- 删除对应资产目录并清空空目录
+
+---
+
+**3.2 语义编译层（Agent 真正价值）**
+
+核心规则在 cursor-rule.md：
+
+1. 双层语义强约束  
+- raw 只能作为输入证据  
+- product 才是权威输出  
+见：cursor-rule.md
+
+2. 编译流程标准化  
+- 先理解 raw 信号
+- 再路由到 feature 结构
+- 只做综合，不原样搬运
+- 强制 cross-link + provenance + confidence  
+见：cursor-rule.md
+
+3. 自动分类路由  
+Jira story 按关键词映射到具体 feature 页面（platform、communications、access-control、SIP、SI 等）  
+见：cursor-rule.md
+
+4. 质量门禁  
+每页必须有 Coverage Status，且有 Last Verified 日期规则  
+见：cursor-rule.md
+
+5. 索引与日志强制  
+编译后必须更新 index 和 log  
+见：cursor-rule.md
+
+---
+
+**3.3 发布层（product 是 md，但发布是工程流水线）**
+
+1. 本地运行  
+mkdocs serve 读取 product 目录并生成本地站点  
+证据：README.md
+
+2. 配置关键  
+- docs_dir 指向 product  
+- nav 定义侧边栏信息架构  
+证据：mkdocs.yml, mkdocs.yml
+
+3. CI 发布  
+push 到 main/master 且 product 改动时触发：
+- install 依赖
+- mkdocs build
+- mkdocs gh-deploy --force  
+证据：mkdocs-gh-pages.yml
+
+所以“跑起来”的本质是：md 作为源码，MkDocs 作为编译器，GitHub Actions 作为执行器，Pages 作为运行时承载。
+
+---
+
+**3.4 治理闭环层**
+
+1. 变更日志  
+log.md 要求新条目置顶，并记录 ingest/gap/backfill/index 更新
+
+2. 陈旧性巡检  
+staleness-check.yml
+- 用 git log 最后提交时间计算每个 product 页面 age
+- 超过阈值生成报告
+- 自动创建/更新 issue，推动重新导出与重编译
+
+3. 协作守则  
+CONTRIBUTING.md 规定 PR 审查必须看 index/log/Coverage
+
+这就是你第三点“知识治理闭环”的落地机制。
+
+---
+
+**4. 你仓库当前真实状态（面试时要诚实）**
+
+1. 发布工作流是启用的  
+mkdocs-gh-pages.yml
+
+2. 导出和 staleness 工作流当前被禁用（job if: false）  
+export-and-ingest.yml, staleness-check.yml
+
+3. 当前规模（我刚实际统计）
+- product md：30
+- raw jira md：328
+- raw confluence md：0
+- product 覆盖状态块：27
+- log 条目：24
+
+这组数字可以直接写到面试/简历里，体现你不是“demo”。
+
+---
+
+**5. 如果你要从零重建，按这个顺序做**
+
+**阶段A：骨架**
+1. 建目录：raw、product、scripts、.github/workflows
+2. 配 mkdocs.yml，设置 docs_dir=product 和 nav
+3. 放 product/index + overview + architecture + glossary 基础页
+
+**阶段B：输入自动化**
+1. 实现 export-jira（先支持 --issue）
+2. 增加 ADF 文本解析、comments、attachments
+3. 实现 export-confluence（phase/page/space 三种导出）
+4. 做 filter-jira-keys-from-excel
+
+**阶段C：编译规则**
+1. 先写层级语义规则（raw 非权威）
+2. 写分类路由规则（按关键词映射 feature）
+3. 写 Coverage Status 模板和日期更新规则
+4. 写 index/log 强制更新规则
+
+**阶段D：发布和治理**
+1. 上 mkdocs-gh-pages workflow
+2. 上 staleness-check workflow
+3. 给 PR 模板加检查清单
+
+**阶段E：验收标准（非常重要）**
+1. 任意 story 能定位到唯一主页面
+2. 每个 product 页面都有 Coverage Status
+3. 每次编译后 index 与 log 同步更新
+4. push 后站点可自动更新
+5. stale 页面能自动告警
+
+---
+
+**6. 面试时你该怎么讲（2分钟版本）**
+
+1. 背景  
+团队知识分散在 Jira/Confluence，口径不一致，查找成本高。
+
+2. 方法  
+我把系统拆成 raw 输入层和 product 权威层，用 Agent 规则做语义编译，不允许 raw 直出；再用 MkDocs+GitHub Actions 发布站点。
+
+3. 工程化  
+我做了分类路由、Coverage Status、index/log 强制更新；并加了 stale 检测和 issue 驱动回补，形成治理闭环。
+
+4. 结果  
+当前沉淀 30 个编译页面、328 条 Jira 原始故事输入、27 个覆盖状态块、24 条治理日志，可持续迭代，不依赖单人记忆。
+
+5. 反思  
+下一步会把 staleness 与 export workflow重新开启并指标化（更新频率、过期率、回补 SLA）。
+
+---
+
+**7. 高频追问与标准答法**
+
+1. 为什么不用 RAG 向量库直接问答？  
+你这个场景先要“确定性知识治理”，不是先“生成答案”。先编译成结构化权威文档，再决定是否叠加检索问答层。
+
+2. product 只是 md，为什么算系统？  
+因为系统由规则、流水线、门禁、审计组成；md 只是数据面。逻辑在规则和CI里。
+
+3. Agent 和普通脚本的边界？  
+脚本负责采集与标准化；Agent负责语义归纳、路由和知识融合，两者解耦。
+
+4. 怎么防幻觉？  
+限制来源只来自 raw；每段内容保留 Sources；Coverage 标注置信度；禁止编造缺失事实。
+
+5. 怎么处理多人协作冲突？  
+通过 index/log 强制更新 + PR checklist + ADR 机制，降低知识漂移。
+
+6. 如果规则变了怎么办？  
+改 cursor-rule，重新跑编译 pass，log记录规则变更与回填影响范围。
+
+---
+
+**8. 你现在最该补的两件事（对求职最有帮助）**
+1. 开启并跑一次 staleness workflow，留下 issue 证据链。  
+2. 从 log 里提取一组效率指标（例如每周 ingest 数、覆盖增长、回补周期）用于简历量化。
+
+如果你愿意，我下一步直接给你：
+1. 一版“可直接贴简历”的项目描述（高密度、对齐 Agent/LLM 岗）  
+2. 一版“面试深挖问答脚本（10问10答）”  
+3. 一版“你重新实现时的任务拆解清单（按周）”。
+
+User: 1. 语义编译层：Agent 按规则把 raw 归纳到 product
+如何具体实现的
+
+GitHub Copilot: 语义编译层在你这个项目里，本质是 规则驱动的 LLM 编译协议，不是一个单独常驻服务。  
+具体实现可以拆成 7 个可落地模块，你现在仓库已经有完整规范依据。
+
+核心规范入口：
+cursor-rule.md  
+关键段落：
+cursor-rule.md  
+cursor-rule.md  
+cursor-rule.md  
+cursor-rule.md
+
+1. 输入读取模块
+1. 只读 raw 层，禁止直接把 raw 当最终知识输出。
+1. 扫描增量文件来源：raw/jira、raw/confluence、raw/assets。
+1. 解析 front matter 与正文信号：jira_key、labels、status、description、acceptance criteria、comments。
+1. 这一步对应你的导出规范与协作规范：README.md, CONTRIBUTING.md。
+
+2. 信号抽取模块
+1. 从标题、描述、验收标准里抽关键词与实体。
+1. 生成结构化信号对象：
+1. domain 信号：SIP、SI、GE、tenant、permission、notification、report。
+1. action 信号：invite、approve、screen、export、rebrand。
+1. provenance 信号：jira key、confluence url、phase、epic。
+1. 这里的目的是把原文噪声压缩成可路由语义特征。
+
+3. 分类路由模块
+1. 采用优先级规则路由到唯一主页面（primary target）。
+1. 规则来源就是 cursor-rule.md。
+1. 例子：
+1. 命中 tenant 或 multi-tenant 归到 platform/multi-tenancy。
+1. 命中 permission/role 归到 access-control。
+1. 命中 SIP/proposal/screening 归到 special-issue-proposals。
+1. 如果跨域，确定一个主页面，其他页面只加 Related 指针，不重复拷贝。
+
+4. 语义合成模块
+1. 不是复制 raw，而是生成稳定知识表述：
+1. 业务规则
+1. 状态机与转移条件
+1. 角色权限边界
+1. API 或集成约束
+1. 明确处理冲突：
+1. 新故事与旧规则冲突时，保留最新事实并标注 superseded/clarified。
+1. 来源不足时写 Coverage gap，不补脑。
+1. 你在 log.md 里已经大量体现这种合并策略。
+
+5. 文档写入模块
+1. 更新目标 product 页面时强制维护统一结构：
+1. 正文知识块
+1. Related 区块
+1. Sources 区块
+1. Coverage Status 区块
+1. 你仓库里几乎每个核心页都有 Coverage Status，可作为模板参考：
+例如 sip-workflow-generic.md。
+1. 同步更新全局导航与追踪：
+1. index.md
+1. log.md
+
+6. 质量门禁模块
+1. 编译完成后做 5 个检查：
+1. 每个改动页是否包含 Coverage Status。
+1. Last Verified 日期是否更新（仅改动行对应更新）。
+1. Sources 是否有 Jira/Confluence 证据。
+1. index 是否包含新页面或摘要变化。
+1. log 是否追加本次 ingest 记录。
+1. 这些门禁在规则和贡献流程里都有明确约束：
+cursor-rule.md, cursor-rule.md, CONTRIBUTING.md。
+
+7. 触发执行模块
+1. 当前实现是 人工触发 Agent 编译回合：
+1. 先导出 raw。
+1. 再给 Copilot/Cursor 指令 compile new raw files。
+1. Agent按规则执行一次编译与落盘。
+1. 你也可以升级成半自动：
+1. CI 检测 raw 变更后自动生成 compile task 文件。
+1. 人只做最终 review merge。
+
+你可以把这一层一句话讲成：
+我把 LLM 从自由写作模式收敛成受约束的语义编译器，输入是 raw 证据，输出是 product 权威知识，过程中强制路由、来源、覆盖状态与审计日志，从而实现可重复、可追踪、可协作的知识沉淀。
+
+如果你愿意，我下一步可以直接给你一份 可复刻的语义编译器接口设计（输入 JSON 结构、路由函数签名、合成输出模板、门禁校验器），你按这个就能重写成自己的版本。
+
+User: 不是，我问的是ai怎么读怎么执行，不是说这些规则
+
+GitHub Copilot: 你这个追问非常对。你问的是 运行机制，不是规则内容。  
+直接说结论：
+
+AI 不是在后台自己爬文件执行任务，而是一次次被你触发后，按 回合 执行：读上下文 → 决定要不要调工具 → 读文件/改文件/跑命令 → 返回结果。
+
+下面是你这个项目里 AI 实际怎么读、怎么执行的。
+
+**1. AI 怎么读**
+1. 平台先把上下文喂给模型  
+内容包括：你的提问、当前打开文件、工作区目录树、终端状态、系统指令、开发者指令。  
+例如你现在打开的是 TEMPLATE.md。
+
+2. 模型不会自动拥有全仓库全文  
+它只能看到被注入的摘要和它主动调用工具读到的内容。
+
+3. 真正读文件靠工具调用  
+典型是：
+1. 找文件：file_search / grep_search
+2. 读内容：read_file
+3. 看目录：list_dir  
+也就是说，模型是按需拉取，不是全量载入。
+
+4. 读是分块的  
+大文件会分段 read_file，多次调用后拼成工作记忆。
+
+**2. AI 怎么执行**
+1. 先做决策  
+模型先判断这次是：
+1. 只分析
+2. 需要改代码/文档
+3. 需要跑命令验证
+
+2. 需要改动时，走编辑工具  
+一般用 apply_patch 改文件；必要时 create_file 新建文件。
+
+3. 需要验证时，走执行工具  
+比如 run_in_terminal 跑命令，get_errors 查报错。
+
+4. 每次工具调用都有返回  
+模型根据返回继续下一步，不会盲改。
+
+5. 一轮结束后输出总结  
+告诉你改了什么、在哪里、是否验证成功。
+
+**3. 放到你这个项目的具体执行链路**
+假设你说 请编译新 raw 到 product，AI 的真实执行是：
+
+1. 找输入  
+扫描 raw 里的新增或目标文件。
+
+2. 读输入  
+read_file 读取 raw Jira/Confluence 文本和 front matter。
+
+3. 找目标页  
+读 cursor-rule.md 或你给的指令，确定写入哪个 product 页面。
+
+4. 读目标页  
+打开对应 product 页面，避免重复和冲突。
+
+5. 生成补丁  
+用 apply_patch 把归纳后的内容写入目标页。
+
+6. 同步维护  
+更新 index.md 和 log.md。
+
+7. 可选验证  
+跑 mkdocs build 或检查格式一致性。
+
+8. 返回结果  
+告诉你本轮处理了哪些 raw，更新了哪些 product 页面。
+
+**4. 你最关心的几个真相**
+1. 没有常驻后台 Agent 自动跑  
+你不触发，它不执行。
+
+2. 没有隐式全局记忆  
+除非显式写入 memory 文件，否则下一轮不会自动记住全部中间状态。
+
+3. 不是脚本替代品  
+AI 负责语义决策和归纳；脚本负责稳定采集和结构化导出。
+
+4. 本质是 工具编排型推理  
+模型负责决策，工具负责 IO 和执行。
+
+**5. 你面试可以这样一句话回答**
+我做的是受工具约束的 Agent 执行链路：模型按回合读取上下文并按需调用文件与终端工具完成编译任务，不是后台自治机器人。它的能力来自 推理决策 + 工具执行，而不是单纯规则文本。
+
+如果你愿意，我下一条可以直接给你：
+1. 一张 语义编译 Agent 时序图
+2. 一个最小可复刻实现的接口定义（Controller、Reader、Router、Writer、Validator）  
+你照着就能在新项目里重建。
+
+User: 因为我自己做过RAG知识库系统，我要怎么把这两个项目合在一起写成一个有内容并且合理的项目
+
+GitHub Copilot: 非常适合合并，而且合并后会比单独写更强。
+
+你可以把它写成一个完整的“知识智能平台”项目，而不是两个分散项目。
+
+**项目总定位**
+企业知识智能平台（Knowledge Intelligence Platform）  
+核心思想：你先解决“知识质量与治理”（编译层），再解决“知识检索与问答”（RAG层）。
+
+1. 编译层（你现在这个 Wiki/Agent 项目）
+1. 从 Jira/Confluence 等源头抽取内容
+2. 语义归纳、分类路由、去噪、结构化沉淀
+3. 建立覆盖状态、变更日志、陈旧性检查等治理机制
+
+2. RAG层（你之前做的项目）
+1. 文档切分、向量化、召回重排、答案生成
+2. 提供问答与检索能力
+3. 监控检索命中率、答案质量和幻觉率
+
+3. 闭环层（两者合体后的亮点）
+1. 用户问答日志与低置信问题反哺编译层
+2. 编译层更新后触发增量索引更新
+3. 形成 数据源 → 编译治理 → RAG服务 → 反馈优化 的闭环
+
+**你在简历里怎么写才“有内容且合理”**
+不要写成“我做了A项目和B项目”。  
+要写成“我做了一个两层架构系统，A是离线知识治理引擎，B是在线知识服务引擎”。
+
+建议用这个项目名：
+企业知识编译与 RAG 问答平台（Agent + RAG）
+
+建议用这个一句话简介：
+构建了从多源业务文档到可治理知识资产，再到在线问答服务的端到端系统，显著提升知识可用性与问答准确性。
+
+**简历子弹点模板（可直接改）**
+1. 设计并实现双层知识架构：离线 Agent 编译层负责多源文档语义归纳与规则化治理，在线 RAG 层提供低延迟检索问答服务。  
+2. 搭建知识治理流水线（分类路由、覆盖状态、变更日志、陈旧性检测），将非结构化需求文档转化为可追溯、可维护的知识资产。  
+3. 在 RAG 侧实现检索增强链路（切分、向量召回、重排、答案生成），并通过离线编译层提升语料质量，降低幻觉与噪声召回。  
+4. 建立反馈闭环：基于问答失败样本与低置信查询回流知识编译层，支持增量更新与持续优化。
+
+**面试叙事建议（强烈推荐）**
+按这条线讲，逻辑最顺：
+
+1. 先讲痛点  
+直接做 RAG 时，原始语料噪声大、版本冲突多，导致召回不稳。
+
+2. 再讲关键决策  
+把系统拆成两层：先“编译知识”，再“检索问答”。
+
+3. 再讲工程实现  
+离线层做标准化与治理，在线层做检索与生成，二者通过增量索引联动。
+
+4. 再讲结果  
+知识可维护性提升，RAG 准确率和一致性更高，迭代效率提升。
+
+5. 最后讲可迁移性  
+这套模式可迁移到任何企业知识场景（研发文档、客服知识、合规文档）。
+
+**你需要补的关键量化指标（合并后）**
+至少准备 6 个数字，不然面试会觉得“偏概念”：
+
+1. 数据规模：源文档数、编译后知识页数、向量条目数  
+2. 质量指标：去重率、覆盖率、陈旧页面占比  
+3. 检索指标：Recall@k、MRR、重排提升幅度  
+4. 生成指标：答案采纳率、人工评测分、幻觉率  
+5. 效率指标：知识更新时延、索引更新时间、维护人时节省  
+6. 业务指标：新人上手时间、问题闭环时长、重复提问下降比例
+
+**一句话防追问（为什么要两层）**
+“RAG 解决的是检索与生成，编译层解决的是知识质量与治理；没有前者，系统不好用，没有后者，系统不可信。”
+
+如果你愿意，我下一步直接给你两版终稿：
+1. 校招/实习一页简历版（3条精简高密度）  
+2. 面试版（90秒主讲稿 + 10个高频追问标准答案）
+
+User: 我的agent不是github中的copilot执行吗？为什么是离线的
+
+GitHub Copilot: 你说得对，你的 Agent 执行主体就是 Copilot（你在 VS Code 里触发它执行）。  
+我前面说的“离线”，不是指“本地跑、不是 Copilot”，而是指 处理模式。
+
+准确区分是这三件事：
+
+1. 执行者是谁  
+是 Copilot Agent（你触发后执行）。
+
+2. 在哪运行  
+通常是云端模型 + 本地工具协同，不是你自己手写一个后台服务。
+
+3. 离线/在线是什么意思  
+这里是数据流程术语，不是网络术语。  
+离线层 = 非实时、批处理、可分钟级/小时级完成（比如把原始文档编译成结构化知识）。  
+在线层 = 用户请求来了要秒级响应（比如 RAG 问答接口）。
+
+所以你这个项目可以这样说，最严谨：
+
+- Copilot Agent 执行“离线知识编译任务”（按批次处理 raw 文档）。  
+- RAG 服务执行“在线问答任务”（实时响应用户查询）。
+
+一句话版本给面试官：
+我的 Agent 是 Copilot 执行的，但它承担的是离线批处理角色；在线实时部分由 RAG 服务承担。
+
+User: 我的业务逻辑应该是，github action中有自动跑检测文件是否更新的脚本，一旦更新就触发agent生成product-发布一系列动作。我想知道的是agent触发时机是什么样的在代码项目中
+
+GitHub Copilot: 你这个问题我理解为“在工程里，GitHub Actions 到 Agent 的自动触发链路应该怎么设计、当前仓库实际触发点在哪里”。我直接基于你现有 workflow 现状给你一个可落地触发模型，并标出你项目当前断点。
+
+你的理解是对的，这条链路在工程上应该是：
+
+检测更新 → 触发编译 Agent → 产出 product 变更 → 触发发布
+
+关键问题是：Agent 的触发时机不是“它自己醒来”，而是被 CI 事件触发。
+
+结合你仓库当前状态，先说现状，再说标准做法。
+
+**当前仓库的真实触发点**
+1. 发布触发已存在  
+当 product 或站点配置改动 push 到主分支时，会触发发布流程。见 mkdocs-gh-pages.yml。
+
+2. 原始数据导出流程当前停用  
+导出 workflow 的 job 被关闭。见 export-and-ingest.yml。
+
+3. 陈旧检测流程当前停用  
+staleness workflow 的 job 也被关闭。见 staleness-check.yml。
+
+结论：你现在有 自动发布，但没有 自动编译 Agent 触发链路。
+
+**你问的核心：Agent 在代码项目里到底何时触发**
+工程上一般由这三层条件共同决定：
+
+1. 事件触发  
+比如 push、pull_request、schedule、workflow_dispatch、workflow_run。
+
+2. 路径过滤  
+只在 raw 路径变化时触发编译，避免无关提交浪费。
+
+3. 差异门禁  
+触发后先判断是否真的有需要编译的新增或变更 raw 文件；无变化则快速退出。
+
+所以“触发时机”可以定义为：  
+有原始输入变化且通过门禁时，在 CI job 中启动编译执行器。
+
+**最常见的 3 种触发设计**
+1. Push 驱动  
+触发条件：push 到主分支且命中 raw 路径。  
+优点：实时。  
+风险：高频触发，需要并发控制。
+
+2. PR 合并驱动  
+触发条件：raw staging PR 合并后触发编译。  
+优点：流程可审计，适合你这种知识治理仓库。
+
+3. 定时批处理驱动  
+触发条件：每天/每小时 schedule。  
+优点：稳定可控，适合批量编译。
+
+**你这类项目推荐的触发时序**
+1. raw 变更进入主分支  
+2. compile workflow 被触发  
+3. compile job 执行：
+1. 找到 changed raw files
+2. 调用编译执行器
+3. 更新 product、index、log
+4. 提交一个 product PR 或直接推分支
+4. product 发生变更后自动触发发布 workflow  
+5. 可选：staleness workflow 周期巡检，补偿漏编译
+
+**一个关键现实点（非常重要）**
+GitHub Actions 不能直接“调用你本地 VS Code 里的 Copilot 聊天 Agent”。  
+也就是说：
+1. 你在 IDE 里用的 Copilot Agent 是交互式执行器。
+2. CI 里要自动化，通常需要一个可脚本化的编译执行器：
+1. 你自己的 compile 脚本
+2. 或可编程 LLM API 调用器
+3. 或内部 Agent 服务入口
+
+所以在简历里最稳妥的说法是：
+我把 Agent 编译逻辑流程化并接入 CI 触发门禁，发布链路自动化；IDE 中的 Copilot 用于交互式编译与规则验证。
+
+**你项目里“Agent 触发时机”可写成这句**
+当 raw 目录检测到增量变更并通过差异门禁后，CI 启动语义编译任务；任务完成并提交 product 变更后，由 MkDocs 发布流水线自动部署站点。
+
+如果你愿意，我下一步可以直接给你一份可直接落库的 compile workflow 设计稿（触发条件、门禁步骤、失败回滚策略、并发与幂等规则），对齐你现在这三个 workflow。
+
+User: 我的github中有copilot啊，我从来没说过我是用vscode中的ai
+
+GitHub Copilot: 你说得完全对，我刚才把“触发位置”说窄了，应该按你这个前提来讲：你用的是 GitHub 里的 Copilot，不是 VS Code 本地会话。
+
+在这个前提下，结论是：
+
+1. Copilot 本身不是“文件一变就自动跑”的常驻服务  
+2. 触发依然来自 GitHub 事件或人工动作  
+3. 你要实现“raw 更新后自动编译”，需要用 GitHub Actions 做编排，把 Copilot 放在流程中的某个触发点
+
+你这个仓库当前状态（我基于现有 workflow）是：
+1. 发布会自动触发，见 mkdocs-gh-pages.yml  
+2. 导出与陈旧检测目前关闭，见 export-and-ingest.yml, staleness-check.yml
+
+所以目前是“自动发布已接通，自动编译触发未接通”。
+
+如果你坚持全在 GitHub 内完成，常见触发设计是：
+
+1. raw 变更触发 compile workflow  
+路径过滤 raw 目录变化  
+2. compile workflow 做差异检查  
+没有增量就退出  
+3. 有增量则触发编译执行  
+这里有两种实现：
+1. 调用你自己的编译脚本或 LLM API（最稳定）  
+2. 通过 Issue/PR 自动评论触发 Copilot 参与（依赖你组织当前可用的 Copilot 工作流能力）  
+4. 产出 product 变更后，自动进入发布 workflow
+
+你可以在面试里这样说一句，最稳：
+我们使用 GitHub Actions 负责事件触发和门禁，Copilot 负责语义编译任务执行；触发由仓库事件驱动，而不是 Copilot 自主轮询仓库。
+
+如果你愿意，我下一步可以直接给你一版“纯 GitHub 方案”的触发蓝图：
+1. 哪些事件触发  
+2. 哪些路径过滤  
+3. 如何串联 compile 与 publish  
+4. 在你当前三个 workflow 上怎么改最少。
+
+User: 好的，那请你再这个基础上，重新整理一下Agent+RAG项目，也是从宏观到微观
+
+GitHub Copilot: 很好，这次我给你一版可直接用于“实现+面试+简历”的 Agent + RAG 项目总设计，从宏观到微观，并且贴合你现在这个仓库的现实状态。
+
+**一、宏观定位**
+这个项目不要再拆成两个独立项目，而是统一成一个“企业知识智能闭环平台”。
+
+1. 离线知识编译层（Agent）
+把 Jira/Confluence 原始信息编译成结构化、可治理的知识资产（product）。
+2. 在线知识服务层（RAG）
+对编译后的知识做检索增强问答，提供实时回答。
+3. 治理反馈层（闭环）
+把问答失败样本、低置信问题回流到编译层，持续修复知识质量。
+
+一句话价值：
+先保证知识可信，再保证问答可用。
+
+---
+
+**二、端到端业务闭环**
+1. 数据进入
+raw 目录新增或更新文件。
+2. 触发编排
+GitHub Actions 检测变更，触发编译任务。
+3. Agent 编译
+按规则将 raw 归并到 product，更新索引和日志。
+4. 文档发布
+MkDocs 构建并发布站点。
+5. RAG 索引
+对 product 增量切分、向量化、重排索引刷新。
+6. 在线问答
+用户查询走检索增强生成。
+7. 反馈回流
+低质量问答进入待编译队列，驱动下一轮更新。
+
+---
+
+**三、与你仓库对应的架构映射**
+1. 原始输入层
+raw
+2. 编译规则层
+cursor-rule.md
+3. 权威知识层
+index.md
+4. 发布配置层
+mkdocs.yml
+5. 发布流水线
+mkdocs-gh-pages.yml
+6. 导出流水线（当前停用）
+export-and-ingest.yml
+7. 陈旧性巡检（当前停用）
+staleness-check.yml
+8. 变更审计
+log.md
+
+你当前是“发布自动化已通，编译触发自动化待补”。
+
+---
+
+**四、模块级设计（中观）**
+1. GitHub 事件编排模块
+职责：触发时机控制和门禁。
+输入：push、pull_request、schedule、workflow_dispatch。
+输出：是否启动 compile job。
+
+2. Agent 编译模块
+职责：语义抽取、分类路由、知识合成、写回。
+输入：raw 增量文件 + 编译规则。
+输出：product 变更 + index 更新 + log 追加。
+
+3. 质量门禁模块
+职责：防止“写了但不可治理”。
+检查项：
+1. Coverage Status 是否存在且日期有效
+2. Sources/Related 是否完整
+3. index 与 log 是否同步更新
+
+4. 发布模块
+职责：站点构建与部署。
+输入：product 变更。
+输出：GitHub Pages 可访问站点。
+
+5. RAG 索引模块
+职责：将 product 转成检索数据结构。
+流程：清洗 → 切分 → embedding → 向量库写入 → 重排特征更新。
+
+6. RAG 服务模块
+职责：在线查询编排。
+流程：query rewrite → dense/sparse 检索 → rerank → LLM 生成 → 引用返回。
+
+7. 反馈学习模块
+职责：把线上失败回流到离线编译。
+规则：
+1. 低置信答案
+2. 无法回答
+3. 用户差评
+形成待补知识任务。
+
+---
+
+**五、微观执行机制（你关心的“怎么读怎么执行”）**
+这里按一次真实任务回合解释：
+
+1. 触发
+GitHub 事件命中 raw 变更条件。
+2. 差异识别
+读取本次变更文件列表，筛选 raw 下增量。
+3. 读取上下文
+读取目标规则文档和目标 product 页面。
+4. 语义处理
+抽取实体、动作、约束，执行路由决策。
+5. 合成写入
+生成补丁，更新对应 product 页。
+6. 治理同步
+更新 index.md 与 log.md。
+7. 验证
+运行文档构建或格式检查。
+8. 产出
+提交 PR 或直接推送到目标分支。
+9. 下游触发
+发布工作流启动，RAG 索引增量更新。
+
+---
+
+**六、触发时机设计（给你面试可讲的标准答案）**
+建议采用双触发：
+
+1. 主触发：raw 变更触发 compile
+事件：push 到主分支且路径命中 raw。
+2. 补偿触发：定时巡检触发 compile
+事件：daily schedule，处理漏编译和 stale 页面。
+
+门禁策略：
+1. 无 raw 增量则快速退出
+2. 同一分支并发只保留最新任务
+3. 编译失败自动开 issue 并附变更上下文
+
+---
+
+**七、RAG 与 Agent 如何真正耦合（不是拼盘）**
+1. 语料来源统一
+RAG 只消费 product，不直接吃 raw。
+2. 索引更新由编译驱动
+compile 成功后触发增量索引，而不是定时全量重建。
+3. 线上问题反哺离线知识
+问答失败样本自动生成 gap 任务，进入编译队列。
+4. 评估口径统一
+离线看知识覆盖与时效，在线看检索与答案质量。
+
+---
+
+**八、指标体系（简历和面试必须有）**
+离线编译指标：
+1. 编译覆盖率
+2. 页面时效（stale 占比）
+3. 来源可追溯率
+4. 平均编译时延
+
+在线 RAG 指标：
+1. Recall@k
+2. MRR 或 nDCG
+3. 答案采纳率
+4. 幻觉率
+5. 平均响应时延
+
+闭环指标：
+1. 失败问题回流率
+2. 回流后问题解决率
+3. 知识修复 SLA
+
+---
+
+**九、你现在可落地的最小升级路径**
+1. 新增 compile workflow（核心缺口）
+触发 raw 变更，执行编译与治理更新。
+2. 恢复 staleness-check
+把陈旧页面自动提单。
+3. 在发布后新增索引更新 job
+仅对变更的 product 页面做增量向量化。
+4. 增加 feedback ingestion
+把线上未命中问题写入 gap 队列。
+
+---
+
+**十、面试主讲模板（90秒）**
+1. 背景：直接做 RAG 时，原始语料噪声和版本冲突严重，答案不稳定。
+2. 决策：我先做 Agent 编译层，把多源信息变成可治理知识资产，再让 RAG 只检索权威层。
+3. 实现：GitHub 事件触发编译，规则路由与门禁保证质量，MkDocs 发布，RAG 增量索引，线上反馈再回流编译。
+4. 结果：系统形成从数据到问答再到修复的闭环，质量和可维护性都提升。
+
+如果你要，我下一步可以直接给你一份“可执行版”设计文档草稿：
+1. compile workflow 的触发与步骤
+2. RAG 增量索引任务接口
+3. 反馈回流数据结构
+4. 你简历可直接粘贴的 3 条高质量项目描述。
+
+User: 关于github page，项目为公司内部项目，请问是否这个page只有sso成功才能访问
+
+GitHub Copilot: 不一定。默认情况下，GitHub Pages 不是“公司 SSO 门禁页”。
+
+结论先说：
+1. 大多数场景下，GitHub Pages 是公开可访问，不要求公司 SSO。  
+2. 只有在你们启用了 GitHub Enterprise 的 Pages 访问控制时，才可能做到“必须登录 GitHub 且通过组织 SSO 才能看”。
+
+你可以按这个判断：
+
+1. 如果当前是普通 gh-pages 发布（常见）  
+结果：知道链接的人都能访问，不走公司 SSO。
+
+2. 如果你们是 GitHub Enterprise Cloud，并且组织启用了 Pages 访问控制  
+结果：访问者需要先登录 GitHub，并且通过组织的 SAML SSO（通常还要是组织成员）。
+
+3. 如果是最严格的“仅公司内网/仅企业账号”  
+建议：不要依赖公开 GitHub Pages，改用公司内部托管方案（带企业 IdP 鉴权）。
+
+你现在这个内部项目，建议马上做两件事：
+1. 检查仓库和组织的 Pages 可见性与访问控制是否已开启。  
+2. 在未确认前，默认按“外部可见”处理，不放敏感内容。
