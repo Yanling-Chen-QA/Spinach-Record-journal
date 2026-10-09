@@ -1,0 +1,26 @@
+# Core
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-deepseek>=0.1.0
+langgraph>=0.2.0
+
+# Tools
+requests>=2.32.0
+html2text>=2024.2.26
+python-dotenv>=1.0.0
+
+# Optional: Knowledge Base (LlamaIndex)
+llama-index>=0.12.0
+llama-index-embeddings-openai>=0.3.0
+
+# Optional: Python REPL
+langchain-experimental>=0.3.0
+
+# Memory watching
+watchdog>=6.0.0
+
+# Web Search (Tavily)
+langchain-tavily>=0.1.0
+
+# Task Scheduler
+apscheduler>=3.10.0

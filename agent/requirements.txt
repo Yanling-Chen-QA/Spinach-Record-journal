@@ -1,0 +1,12 @@
+langchain
+langchain_ollama
+langchain_deepseek
+langchain-openai
+langchain_community
+langchain-tavily
+langchain_experimental
+langchain_text_splitters
+langchain_chroma
+langchain_huggingface
+transformers==4.57.3
+numpy==2.3.2
